@@ -25,7 +25,7 @@ class IndexController extends AbstractActionController
 
         $helper = $fb->getRedirectLoginHelper();
         $permissions = ['email', 'user_likes']; // optional
-        $loginUrl = $helper->getLoginUrl('http://fenilleapps.com.br/login-callback.php', $permissions);
+        $loginUrl = $helper->getLoginUrl('http://fenilleapps.com.br/facebook/fb-callback', $permissions);
 
         echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
         return new ViewModel();
@@ -42,7 +42,7 @@ class IndexController extends AbstractActionController
         $helper = $fb->getRedirectLoginHelper();
 
         $permissions = ['email']; // Optional permissions
-        $loginUrl = $helper->getLoginUrl('https://fenilleapps.com.br/fb-callback', $permissions);
+        $loginUrl = $helper->getLoginUrl('https://fenilleapps.com.br/facebook/fb-callback', $permissions);
 
         echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
         return new ViewModel();
@@ -51,9 +51,9 @@ class IndexController extends AbstractActionController
     public function fbCallbackAction()
     {
         $fb = new Facebook([
-            'app_id' => '{app-id}', // Replace {app-id} with your app id
-            'app_secret' => '{app-secret}',
-            'default_graph_version' => 'v2.2',
+            'app_id' => '482345681927771', // Replace {app-id} with your app id
+            'app_secret' => '0c9f2fb0a24b02b402bf1d1697caffce',
+            'default_graph_version' => 'v2.3',
         ]);
 
         $helper = $fb->getRedirectLoginHelper();
