@@ -1,0 +1,24 @@
+[08-Sep-2016 13:39:28 America/Chicago] PHP Warning:  include(/home/fenil956/public_html/facebook/facebookcollection/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/fenil956/public_html/facebook/facebookcollection/public/index.php on line 22
+[08-Sep-2016 13:39:28 America/Chicago] PHP Warning:  include(): Failed opening '/home/fenil956/public_html/facebook/facebookcollection/public/../vendor/autoload.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home/fenil956/public_html/facebook/facebookcollection/public/index.php on line 22
+[08-Sep-2016 13:39:28 America/Chicago] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'Unable to load application.
+- Type `composer install` if you are developing locally.
+- Type `vagrant ssh -c 'composer install'` if you are using Vagrant.
+- Type `docker-compose run zf composer install` if you are using Docker.
+' in /home/fenil956/public_html/facebook/facebookcollection/public/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/fenil956/public_html/facebook/facebookcollection/public/index.php on line 25
+[09-Sep-2016 13:50:02 America/Chicago] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Zend\Router) could not be initialized.' in /home/fenil956/public_html/facebook/vendor/zendframework/zend-modulemanager/src/ModuleManager.php:203
+Stack trace:
+#0 /home/fenil956/public_html/facebook/vendor/zendframework/zend-modulemanager/src/ModuleManager.php(175): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/fenil956/public_html/facebook/vendor/zendframework/zend-modulemanager/src/ModuleManager.php(97): Zend\ModuleManager\ModuleManager->loadModule('Zend\\Router')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/fenil956/public_html/facebook/vendor/zendframework/zend-eventmanager/src/EventManager.php(490): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/fenil956/public_html/facebook/vendor/zendframework/zend-eventmanager/src/EventManager.php(251): Zend\EventManager\EventManag in /home/fenil956/public_html/facebook/vendor/zendframework/zend-modulemanager/src/ModuleManager.php on line 203
+[09-Sep-2016 13:52:49 America/Chicago] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Zend\Router) could not be initialized.' in /home/fenil956/public_html/facebook/vendor/zendframework/zend-modulemanager/src/ModuleManager.php:203
+Stack trace:
+#0 /home/fenil956/public_html/facebook/vendor/zendframework/zend-modulemanager/src/ModuleManager.php(175): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/fenil956/public_html/facebook/vendor/zendframework/zend-modulemanager/src/ModuleManager.php(97): Zend\ModuleManager\ModuleManager->loadModule('Zend\\Router')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/fenil956/public_html/facebook/vendor/zendframework/zend-eventmanager/src/EventManager.php(490): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/fenil956/public_html/facebook/vendor/zendframework/zend-eventmanager/src/EventManager.php(251): Zend\EventManager\EventManag in /home/fenil956/public_html/facebook/vendor/zendframework/zend-modulemanager/src/ModuleManager.php on line 203
