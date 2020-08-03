@@ -36,8 +36,8 @@ class AccessController extends AbstractActionController
     public function fbCallbackAction()
     {
         $fb = new Facebook([
-            'app_id' => '482345681927771', // Replace {app-id} with your app id
-            'app_secret' => '0c9f2fb0a24b02b402bf1d1697caffce',
+            'app_id' => 'APP_ID', // Replace {app-id} with your app id
+            'app_secret' => 'APP_SECRET',
             'default_graph_version' => 'v2.3',
         ]);
 
